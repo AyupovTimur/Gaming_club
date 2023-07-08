@@ -5,6 +5,11 @@
     align-content: center;
     justify-items: start;
     padding: 0 4vw;
+    padding: 4rem 4rem;
+    @include respond (tab-port) {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
 
     &__descr {
         margin-bottom: 4rem;
@@ -17,11 +22,17 @@
     grid-template-rows: repeat(24, 1fr);
     grid-column: full-start / col-end 4;
     background: url(../img/section_best-place/best-place_bkg.png) center / cover no-repeat;
+    @include respond (tab-port) {
+        grid-column: 1 / -1;
+    }
 
     &__gamer {
         grid-column: 3 / 15;
         grid-row: 3 / 12;
         width: 100%;
+        @include respond (tab-port) {
+            grid-column: 2 / 9;
+        }
     }
 
     &__gamers {
@@ -29,5 +40,11 @@
         grid-row: 10 / 23;
         transform: translateX(3.5rem);
         width: 100%;
+        @include respond (tab-port) {
+            grid-column: 8 / 15;
+        }
+        @include respond (phone) {
+            grid-column: 7 / 14;
+        }
     }
 }
