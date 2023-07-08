@@ -1,0 +1,72 @@
+.title-1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    color: $color-white;
+
+}
+
+.title-2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 100%;
+    color: $color-white;
+}
+
+.title-3 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    color: $color-green-dark;
+
+    &_white {
+        color: $color-white;
+    }
+
+    &_green-light {
+        color: $color-green-light;
+    }
+
+    &_gamer {
+        color: $color-white;
+    }
+
+    &_gamers {
+        justify-self: center;
+        align-self: center;
+        grid-column: 1 / -1;
+    } 
+}
+
+.title-4 {
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.13em;
+    color: $color-green-light
+}
+
+.btn {
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    border: none;
+    background: $color-green-light;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $color-white;
+    transition: all .4s;
+
+    &:hover {
+        background-color: $color-green-dark;
+    }
+
+    &_card {
+        grid-column: 1 / -1;
+    }
+
+    &_header {
+        align-self: start;
+        justify-self: start;
+    }
+}
