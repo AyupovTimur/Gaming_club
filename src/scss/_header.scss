@@ -2,9 +2,12 @@
     grid-column: full-start / col-end 6;
     background-color: $color-blue-dark;
     display: grid;
-    grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr;
+    grid-template-rows: 1fr min-content minmax(11rem, min-content) 1fr;
     padding: 5rem 4.5rem 5rem 6rem;
     background: url(../img/section_header/header_bkg.png) center / cover no-repeat;
+    @include respond (tab-port) {
+        grid-column: full-start / full-end;
+    }
 
     &__line-text {
         font-weight: 700;
@@ -30,7 +33,7 @@
 
     &__img {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
         justify-items: center;
     }
 }

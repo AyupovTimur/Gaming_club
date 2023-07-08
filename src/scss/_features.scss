@@ -5,6 +5,9 @@
     padding: 15rem 0 15rem 0;
     grid-gap: 3rem 4rem;
     align-items: start;
+    @include respond (tab-port) {
+        padding: 8rem 0;
+    }
 }
 
 .feature {

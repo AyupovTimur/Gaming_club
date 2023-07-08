@@ -5,6 +5,9 @@
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     grid-column: center-start / center-end;
     background-color: $color-gray-light;
+    @include respond (tab-port) {
+        padding: 8rem 0;
+    }
 }
 
 .card {

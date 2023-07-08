@@ -33,10 +33,10 @@
             font-size: 1.6rem;
             text-align: center;
             color: $color-white;
-            transition: all .3s;
+            transition: all .4s;
             display: inline-block;
             &:hover {
-                font-size: 1.7rem;
+                transform: translateY(-.5rem);
                 color: $color-green-dark;
             }
         }
